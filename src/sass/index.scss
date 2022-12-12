@@ -1,2 +1,10 @@
-// @import './common';
-// @import './example';
+@import './utils/variables';
+@import './base/start';
+@import './layout/container';
+
+@import './components/header';
+@import './components/hero';
+@import './components/about';
+@import './components/skills';
+@import './components/portfolio';
+@import './components/footer';
