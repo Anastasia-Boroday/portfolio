@@ -1,0 +1,41 @@
+.footer{
+    padding: 80px 0;
+}
+.footer__title{
+    margin-bottom: 28px;
+    font-size: 34px;
+    line-height: 1.2;
+    text-align: center;
+    font-weight: 700;
+}
+.footer__text{
+    margin-bottom: 40px;
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+}
+.footer__btn{
+    margin-bottom: 50px;
+    width: 315px;
+    height: 45px;
+    border-radius: 50px;
+    background-color: var(--main-color);
+    color: var(--bg-color);
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+   
+    cursor: pointer;
+    
+}
+.footer__list-social-media{
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer__after-text{
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--second-color);
+}
