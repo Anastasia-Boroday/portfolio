@@ -1,5 +1,8 @@
 .skills {
     padding: 80px 0;
+    @media screen and(min-width:$desktop) {
+        padding: 100px 0;
+    }
 }
 .skills__title{
     margin-bottom: 50px;
@@ -8,6 +11,9 @@
     line-height: 1.2;
     text-align: center;
     font-weight: 700;
+    @media screen and(min-width:$desktop) {
+        margin-bottom: 70px;
+    }
 }
 .skills__text{
     margin-bottom: 70px;
@@ -16,12 +22,25 @@
     line-height: 1.2;
     text-align: center;
     font-weight: 100;
-
+    @media screen and(min-width:$desktop) {
+        margin-bottom: 85px;
+    }
+}
+.skills__list{
+    @media screen and(min-width:$desktop) {
+       display: flex;
+       justify-content: space-between;
+    }
 }
 .skills__item{
     text-align: center;
     &:not(:last-child){
         margin-bottom: 80px;
+    }
+    @media screen and(min-width:$desktop) {
+    &:not(:last-child) {
+            margin-bottom: 0;
+        }
     }
 }
 .skills__application{
@@ -38,4 +57,7 @@
 .skills__img-star{
     margin-left: auto;
     margin-right: auto
+    // @media screen and(min-width:$desktop) {
+    //     margin: 0;
+    // }
 }
