@@ -1,6 +1,8 @@
 @import './utils/variables';
 @import './base/start';
 @import './layout/container';
+@import './layout/hidden';
+@import './components/mob-menu';
 
 @import './components/header';
 @import './components/hero';

@@ -1,17 +1,21 @@
-.header{
-    display: none;
-    @media screen and(min-width:$desktop) {
-        display: block;
-        &::after {
-            content: '';
-            background-color: var(--second-color);
-            display: block;
-            width: 100%;
-            height: 1px;
-            }  
-        } 
-}
+// .header{
 
+// }
+.header-wrapp{
+    display: none;
+    
+        @media screen and(min-width:$desktop) {
+            display: block;
+    
+            &::after {
+                content: '';
+                background-color: var(--second-color);
+                display: block;
+                width: 100%;
+                height: 1px;
+            }
+        }
+}
 .header__list{
     display: flex;
     justify-content: space-between;

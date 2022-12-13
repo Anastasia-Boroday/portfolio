@@ -1,0 +1,75 @@
+.mob-menu {
+    position: fixed;
+    background-color: var(--bg-color-second);
+    width: 40%;
+    height: 100vh;
+    right: 0;
+    top: 0;
+    z-index: 5;
+    padding: 60px 20px;
+    opacity: 1;
+    transform: translate(1);
+
+    transition: opacity 200ms linear,
+        visibility 200ms linear,
+        transform 200ms linear;
+
+    &.is-hidden {
+        transform: translate(0);
+        visibility: hidden;
+        opacity: 0;
+        pointer-events: none;
+
+    }
+}
+.menu__btn-cross{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 60px;
+    background-color: inherit;
+    border: none;
+    transition: fill 100ms linear;
+    cursor: pointer;
+    
+    &:hover,
+    &:focus {
+        fill: var(--second-color);
+    }
+}
+.menu_icon-cross{
+    width: 50px;
+    height: 50px;
+    fill: black;
+    transition: fill 200ms linear;
+
+    &:hover,
+    &:focus {
+        fill: var(--second-color);
+    }
+
+    @media screen and(min-width:$desktop) {
+        display: none;
+    }
+}
+.mob-menu__item{
+    &:not(:last-child){
+        margin-bottom: 30px;
+    }
+}
+.mob-menu__link{
+    font-family: var(--font);
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--second-color);
+    transition: color 200ms linear;
+
+    
+        &:focus,
+        &:hover {
+            color: var(--main-color);
+            font-size: 32px;
+        }
+}
