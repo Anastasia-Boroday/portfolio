@@ -15,13 +15,23 @@
     z-index: 4;
 
     cursor: pointer;
+    transition: box-shadow 250ms linear;
+    &:hover,
+    &:focus {      
+        box-shadow: 6px 8px 10px 3px rgba(66, 68, 90, 1);
+        box-shadow: 6px 8px 10px 3px rgba(66, 68, 90, 1);
+        box-shadow: 6px 8px 10px 3px rgba(66, 68, 90, 1);
+    
+    }
 }
 .btn-up__icon{
-    width: 30px;
-    height: 30px;
+    width: 60px;
+    height: 60px;
+    padding: 10px;
     fill: var(--bg-color);
+    transition: fill 250ms linear;
     &:hover,
     &:focus {
-        fill: var(--second-color);
+        fill: var(--second-color);            
     }
 }
