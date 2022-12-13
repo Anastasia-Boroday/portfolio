@@ -6,16 +6,22 @@
     height: 60px;
     border-radius: 50%;
 
+    display: flex;
     justify-content: center;
-    font-family: var(--font);
-    font-size: 45px;
-    line-height: 1.2;
-    font-weight: 700;
-
+    align-items: center;
     border: none;
-    // color: white;   
+
     background-color: var(--btn-up);
     z-index: 4;
-    transform: rotate(-90deg);
+
     cursor: pointer;
+}
+.btn-up__icon{
+    width: 30px;
+    height: 30px;
+    fill: var(--bg-color);
+    &:hover,
+    &:focus {
+        fill: var(--second-color);
+    }
 }
