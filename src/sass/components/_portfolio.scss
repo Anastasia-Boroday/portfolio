@@ -16,6 +16,9 @@
         margin-bottom: 50px;
     }
 }
+.portfolio__list{
+    text-align: center;
+}
 .portfolio__item{
     &:not(:last-child){
         margin-bottom: 80px;
@@ -32,10 +35,17 @@
     }
 }
 .portfolio__after-text{
+
     font-size: 18px;
     line-height: 1.2;
-    text-align: center;
+    color: var(--main-color);
     text-decoration-line: underline;
+    transition: color 200ms linear;
+    &:focus,
+    &:hover {
+        color: var(--second-color);
+    }
+
     @media screen and(min-width:$desktop) {
         font-size: 25px;
         line-height: 1.2;
