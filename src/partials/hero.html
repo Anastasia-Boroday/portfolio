@@ -10,7 +10,13 @@
             <p class="hero__text">Front-end developer<br>22 years old, Kyiv</p>
             <p class="footer_lang">UA | ENG</p>
         </div>
-        <img class="hero__img" src="./images/hero-photo.jpg" alt="my photo">   
+        <!-- <img class="hero__img" src="./images/hero-photo.jpg" alt="my photo"> -->
+        <!-- <img class="hero__img" src="./images/hero-me1.jpg" alt="my photo"> -->
+        <picture class="hero__img">
+            <source srcset="./images/hero-me2.jpg" media="(min-width:1280px)">
+            <source srcset="./images/hero-me1.jpg" media="(min-width:320px)">
+            <img class="hero__img" src="./images/hero-me1.jpg" alt="my photo">
+        </picture>
     </div>
     
 </section>
