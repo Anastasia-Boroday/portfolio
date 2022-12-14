@@ -16,12 +16,8 @@
 
     cursor: pointer;
     transition: box-shadow 250ms linear;
-    &:hover,
-    &:focus {      
-        box-shadow: 6px 8px 10px 3px rgba(66, 68, 90, 1);
-        box-shadow: 6px 8px 10px 3px rgba(66, 68, 90, 1);
-        box-shadow: 6px 8px 10px 3px rgba(66, 68, 90, 1);
-    
+    &:hover{      
+        box-shadow: 6px 6px 6px 0px rgba(66, 68, 90, 1);    
     }
 }
 .btn-up__icon{
@@ -35,3 +31,4 @@
         fill: var(--second-color);            
     }
 }
+
