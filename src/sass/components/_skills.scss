@@ -27,7 +27,8 @@
     }
 }
 .skills__list{
-    margin-bottom: 40px;
+    margin-bottom: 50px;
+
     @media screen and(min-width:$desktop) {
        display: flex;
        justify-content: space-between;
@@ -35,7 +36,6 @@
 }
 .skills__item{
     text-align: center;
-    
     &:not(:last-child){
         margin-bottom: 80px;
     }
@@ -46,7 +46,6 @@
     justify-content: space-between;
     &:not(:last-child) {
         margin-bottom: 0;
-        width: 200px;
         }
     }
 }
@@ -57,7 +56,6 @@
 }
 .skills__application-text{
     margin-bottom: 20px;
-    // color: var(--second-color);
     font-size: 18px;
     font-weight: 700;
     line-height: 1.2;
@@ -65,12 +63,22 @@
 // -----------------------------------------------------
 .list-stars{
     display: flex;
+    justify-content: center;
+@media screen and(min-width:$desktop) {   
     justify-content: space-between;
+    }    
 }
 .skills-star{
-    fill: grey;
+    padding-right: 5px;
+    fill:var(--second-color);
     width: 30px;
     height: 30px;
+    &:not(:last-child) {
+        padding-right: 0;
+    }   
+    @media screen and(min-width:$desktop) {
+        padding-right: 0
+    }
 }
 .star-black{
     fill: black;
