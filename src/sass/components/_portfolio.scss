@@ -25,7 +25,7 @@
     }
 }
 .portfolio__img{
-    margin-bottom: 35px;
+    margin-bottom: 30px;
     box-shadow: 5px 5px 8px 2px rgb(0 0 0 / 30%);
     width: 345px;
     height: 171px;
@@ -39,7 +39,6 @@
     font-size: 18px;
     line-height: 1.2;
     color: var(--main-color);
-    text-decoration-line: underline;
     transition: color 200ms linear;
     &:focus,
     &:hover {
