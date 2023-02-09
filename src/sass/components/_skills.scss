@@ -63,10 +63,7 @@
 // -----------------------------------------------------
 .list-stars{
     display: flex;
-    justify-content: center;
-@media screen and(min-width:$desktop) {   
-    justify-content: space-between;
-    }    
+    justify-content: center;  
 }
 .skills-star{
     padding-right: 5px;
@@ -76,9 +73,6 @@
     &:not(:last-child) {
         padding-right: 0;
     }   
-    @media screen and(min-width:$desktop) {
-        padding-right: 0
-    }
 }
 .star-black{
     fill: black;
