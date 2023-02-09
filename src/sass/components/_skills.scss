@@ -68,11 +68,15 @@
 .skills-star{
     padding-right: 5px;
     fill:var(--second-color);
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     &:not(:last-child) {
         padding-right: 0;
     }   
+    @media screen and(min-width:$desktop) {
+    width: 30px;
+    height: 30px;
+    }
 }
 .star-black{
     fill: black;
